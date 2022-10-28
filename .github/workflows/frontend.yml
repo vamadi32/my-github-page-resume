@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-  documentation:
+  site-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code code
