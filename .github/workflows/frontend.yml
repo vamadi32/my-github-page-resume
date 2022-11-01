@@ -11,10 +11,7 @@ jobs:
     steps:
       - name: Checkout code code
         uses: actions/checkout@v3
-      - name: Create docs folder
-        run: mkdir docs
       - name: Deploy Pages site
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: docs
