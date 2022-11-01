@@ -1,6 +1,6 @@
 name: Deploy Resume to Github Pages
 on: 
-  push:
+  pull-request:
     branches:
       - main
 
@@ -16,5 +16,5 @@ jobs:
       - name: Deploy Pages site
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: main
+          branch: gh-pages
           folder: docs
