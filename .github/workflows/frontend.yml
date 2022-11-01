@@ -14,7 +14,7 @@ jobs:
       - name: Create docs folder
         run: mkdir docs
       - name: Copy all files to docs
-        run: cp -r docs docs
+        run: cp * docs
       - name: Deploy Pages site
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
