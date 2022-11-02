@@ -25,10 +25,12 @@
    <!-- Script
    ================================================== -->
    <script src="js/modernizr.js"></script>
-
-   <script async src="https://api.countapi.xyz/hit/https://vamadi32.github.io/my-github-page-resume/visits?callback=getCounter"></script>
+   <script async src="https://api.countapi.xyz/hit/https://vamadi32.github.io/my-github-page-resume/visits?callback=getCounter">
+      function getCounter(response) {
+         document.getElementById('visits').innerText = response.value;
+      }
+   </script>
       
-
    <!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
@@ -59,7 +61,7 @@
          <div class="banner-text">
             <h1 class="responsive-headline">Hi, I'm Victor</h1>
             
-        <h1>This page got <span id="visits"></span> views.</h1>
+        <p>This page got <span id="visits"></span> views.</p>
             <ul class="social">
                <li><a href="https://twitter.com/vi_amadi"><i class="fa fa-twitter"></i></a></li>
                <li><a href="https://www.linkedin.com/in/vic-amadi/"><i class="fa fa-linkedin"></i></a></li>
