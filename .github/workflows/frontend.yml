@@ -16,7 +16,7 @@ jobs:
       - name: Cope files to doc folder
         run: |
             cp -r {css,images,js} docs
-            cp  {favicon.png,index.html,README.md,librfiles.js} docs
+            cp  {favicon.png,index.html,README.md} docs
       - name: Deploy Pages site
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
